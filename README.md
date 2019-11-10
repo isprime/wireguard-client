@@ -14,3 +14,39 @@ sudo apt-get install resolvconf wireguard-dkms wireguard-tools linux-headers-$(u
 
 More distros: https://www.wireguard.com/install/
 
+
+Create the client configuration file (/etc/wireguard/wg0.conf) using the template provided here.
+
+```
+[Interface]
+Address = 10.100.100.2/32
+PrivateKey = XXXXX
+
+[Peer]
+PublicKey = XXXX
+Endpoint = x.x.x.x:51820
+AllowedIPs = 0.0.0.0/0
+PersistentKeepalive = 21
+```
+
+# Start / Stop wireguard
+`wg-quick up wg0` `wg-quick down wg0`
+
+
+# Check the status of the connection
+
+```
+root@oraculo:/etc/wireguard# wg
+interface: wg0
+  public key: 7f3D86NUkpPrrhrBPed86WSOnWI32MzXMQjud3PYSmo=
+  private key: (hidden)
+  listening port: 39047
+  fwmark: 0xca6c
+
+peer: 2+tPDMkvdfKNx/oNDw2TAv++7SB/stxNMxC55Wj6MwU=
+  endpoint: 68.169.108.19:51820
+  allowed ips: 0.0.0.0/0
+  latest handshake: Now
+  transfer: 5.33 KiB received, 2.24 KiB sent
+  persistent keepalive: every 21 seconds
+```
