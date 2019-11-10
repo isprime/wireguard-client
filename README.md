@@ -33,11 +33,13 @@ AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 21
 ```
 
+Ubuntu / Debian comand line interface
+
 # Start / Stop wireguard
 `wg-quick up wg0` `wg-quick down wg0`
 
 
-# Check the status of the connection
+### Check the status of the connection
 
 ```
 root@oraculo:/etc/wireguard# wg
