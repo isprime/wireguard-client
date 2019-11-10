@@ -44,7 +44,7 @@ interface: wg0
   fwmark: 0xca6c
 
 peer: XXXXXXXXXXXXXXXXXXX
-  endpoint: 68.169.108.19:51820
+  endpoint: x.x.x.x:51820
   allowed ips: 0.0.0.0/0
   latest handshake: Now
   transfer: 5.33 KiB received, 2.24 KiB sent
