@@ -38,12 +38,12 @@ PersistentKeepalive = 21
 ```
 root@oraculo:/etc/wireguard# wg
 interface: wg0
-  public key: 7f3D86NUkpPrrhrBPed86WSOnWI32MzXMQjud3PYSmo=
+  public key: XXXXXXXXXXXXXXXXXX
   private key: (hidden)
   listening port: 39047
   fwmark: 0xca6c
 
-peer: 2+tPDMkvdfKNx/oNDw2TAv++7SB/stxNMxC55Wj6MwU=
+peer: XXXXXXXXXXXXXXXXXXX
   endpoint: 68.169.108.19:51820
   allowed ips: 0.0.0.0/0
   latest handshake: Now
