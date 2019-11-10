@@ -8,7 +8,13 @@ wireguard_comparisions.png
 
 ![wireguard](wireguard_comparisions.png)
 
-# Ububtu / Debian base
+# Mac & iPad & iPhone
+
+
+https://apps.apple.com/us/developer/wireguard-development-team/id1441195208
+
+
+# Ububtu & Debian base
 
 ```
 sudo add-apt-repository ppa:wireguard/wireguard
